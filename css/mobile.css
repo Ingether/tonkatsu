@@ -24,7 +24,7 @@ body {
 
 header>#header-area>a>h1 {
 
-    background: --logoURL no-repeat; /* url(로고 경로 입력) */
+    background: var(--logoURL) no-repeat; /* url(로고 경로 입력) */
 
     background-size: auto 32px;
 
