@@ -42,7 +42,7 @@ html {
 body {
 	background: transparent;
 	height: 100%;
-	background: url(http://ingether.github.io/tonkatsu/bg.png);
+	background: url(http://ingether.github.io/tonkatsu/assets/bg.png);
 	background-size: 33%;
 }
 
@@ -92,6 +92,7 @@ header .row>div:nth-child(1) > a > img {
 /* 검색 창 */
 header #right-search-form>input[type='text'] {
 	border: 2px solid var(--color4);
+	width: 25%;
 }
 
 /* 검색 버튼 */
