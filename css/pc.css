@@ -171,6 +171,10 @@ header #header-bar>.row {
 	width: calc(100% - 100px); /* 스트리머 게시판 적용시 */
 }
 
+#board-info h1 >a:before {
+	content: "돈까스 & ";
+}
+
 #board-info h1>a:hover,
 #board-info h1>a:focus {
 	color: var(--color4);
