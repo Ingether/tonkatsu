@@ -26,9 +26,8 @@ header>#header-area>a>h1 {
 
     background: var(--logoURL) no-repeat; /* url(로고 경로 입력) */
 
-    background-size: auto 32px;
+    background-size: 96px 32px;
 
-    width: var(--logoWidth);
 
 }
 
@@ -118,7 +117,7 @@ header {
 
 #article-list>.article-list-row.notice {
 
-    background-color: var(--color1); /* 공지 배경 색 */
+    background-color: var(--color3); /* 공지 배경 색 */
 
 }
 

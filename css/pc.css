@@ -20,12 +20,15 @@
 	--color5: #f7f1d9;
 
 	--logoURL: url(https://ingether.github.io/tonkatsu/assets/title.png);
-	--logoWidth: 158px;
+	
 	/* 로고 너비 */
-	--before: "";
+	--logoWidth: 158px;
+	
 	/* 접속자 수 앞 문구 */
-	--after: "";
+	--before: "돈까스 ";
+	
 	/* 접속자 수 뒤 문구 */
+	--after: "개 째 삼키는 중";
 }
 
 /* 모든 항목 focus시 아웃라인 제거 */
@@ -43,6 +46,13 @@ body {
 	background-size: 33%;
 }
 
+/* 타이틀 이미지  */
+.fa-user:before {
+	content: url(https://ingether.github.io/tonkatsu/assets/center.png);
+	left: 236px;
+	top: -134px;
+	position: absolute;
+}
 
 a,
 a:hover,
@@ -50,6 +60,13 @@ a:focus {
 	color: var(--color4);
 }
 
+/* 헤더 상단 조절 */
+header #header-bar {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding-right: 30px;
+	padding-left: 30px;
+}
 
 /*************** header ***************/
 
@@ -64,6 +81,7 @@ header .row>div:nth-child(1)>a {
 	height: 50px;
 	background: var(--logoURL) no-repeat;
 	background-size: auto 50px;
+	margin-top: 2em;
 }
 
 /* 기본 트게더 로고 제거 ( 없으면 주석처리 하세요 ) */
