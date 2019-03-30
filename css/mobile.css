@@ -1,0 +1,202 @@
+:root {
+    --color0: #ffffff;
+    --color1: #a4947b;
+    --color2: #cf7916;
+    --color3: #f3e3af;
+    --color4: #ccc078;
+    --color5: #f7f1d9;
+
+	--logoURL: url(https://ingether.github.io/tonkatsu/assets/title.png);
+	--logoWidth: 158px;	 /* 로고 너비 */
+}
+
+body {
+
+    background: var(--color3);
+
+        /* ex) background: #ffffff; */
+
+}
+
+
+/* 로고 */
+
+
+header>#header-area>a>h1 {
+
+    background: --logoURL no-repeat; /* url(로고 경로 입력) */
+
+    background-size: auto 32px;
+
+    width: var(--logoWidth);
+
+}
+
+
+/* 검색 창 */
+
+
+header > #header-search-bar #header-search-input {
+
+    border: 2px solid --color2; /* 검색창 테두리 색 */
+
+    border-radius: 15px;
+
+}
+
+
+/* 검색 버튼 */
+
+header > #header-search-bar #header-search-btn,
+header>#header-area>#header-search-link {
+
+    color: var(--color4); /* 검색창 옆 돋보기 색 */
+
+}
+
+
+/* 트게더 로고 배너 */
+
+
+header {
+
+    border-bottom: 4px solid var(--color2); /* 로고 배너 하단 구분선 색 */
+
+    background: var(--color4); /* 로고 배너 배경 색 */
+
+}
+
+
+/* 상단 배너 광고 뱃지 */
+
+
+#header-top-notice strong.notice-badge {
+
+    background: var(--color5); /* 광고 뱃지 배경 색 */
+
+}
+
+
+/* 접속자 수 */
+
+
+#board-info #viewers-area {
+
+    color: black; /* 접속자 수 글씨 색 */
+
+}
+
+
+#board-info #viewers-area #viewers:before {
+
+    content: "돈까스 ";    /* 숫자 앞에 들어갈 문구 */
+
+        /* ex) content: "트수 "; */
+
+        /* 출력 시 : 트수 n */
+
+    cursor: text;
+
+}
+
+
+#board-info #viewers-area #viewers:after {
+
+    content: "개 째 삼키는 중";    /* 숫자 뒤에 들어갈 문구 */
+
+        /* ex) content: "명 접속중"; */
+
+        /* 출력시 : n명 접속중 */
+
+    cursor: text;
+
+}
+
+
+/* 메인 배너 글 공지 */
+
+
+#article-list>.article-list-row.notice {
+
+    background-color: var(--color1); /* 공지 배경 색 */
+
+}
+
+
+/* 글 추천 수 */
+
+
+#article-list>.article-list-row>.item>.list-header>span {
+
+    background-color: var(--color2); /* 글 추천 수 배경 색 */
+
+}
+
+
+/* 댓글 수 */
+
+
+#article-list>.article-list-row>.item>a.list-title>small.comment-count {
+
+    color: var(--color2); /* 댓글 수 색 */
+
+}
+
+
+/* 인기글 버튼 */
+
+
+#article-list-menu>.btn.best {
+
+    border-radius: 15px;
+
+}
+
+
+/* 설정 버튼 */
+
+
+#article-list-menu>.btn.cog {
+
+    border-radius: 15px;
+
+}
+
+
+/* 글 쓰기 버튼 */
+
+
+#article-list-menu>.btn.write {
+
+    border-radius: 15px;
+
+}
+
+
+/* 목록 버튼 */
+
+
+.btn {
+
+    border-radius: 15px;
+
+}
+
+
+.btn-group-sm>.btn, .btn-sm {
+
+    border-radius: 15px;
+
+}
+
+
+/* 게시글 추천 */
+
+
+.btn-outline-success {
+
+    color: var(--color5); /* 추천 버튼 배경 색 */
+
+    border-color: var(--color3); /* 추천 버튼 테두리 색 */
+
+}

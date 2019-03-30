@@ -1,0 +1,480 @@
+/* 사용자 설정 부분 */
+:root {
+	--color0: #f0f0f0;
+	/* 배경 색 */
+	--color0: #ffffff;
+
+
+	--color1: #a4947b;
+
+	/* 트게더 메뉴, 게시글 hover */
+	--color2: #cf7916;
+
+	/* 공지, 인기글 */
+	--color3: #f3e3af;
+
+	/* 메인 컬러 */
+	--color4: #ccc078;
+
+	/* 공지, 인기글 hover */
+	--color5: #f7f1d9;
+
+	--logoURL: url(https://ingether.github.io/tonkatsu/assets/title.png);
+	--logoWidth: 158px;
+	/* 로고 너비 */
+	--before: "";
+	/* 접속자 수 앞 문구 */
+	--after: "";
+	/* 접속자 수 뒤 문구 */
+}
+
+/* 모든 항목 focus시 아웃라인 제거 */
+*:focus { outline: none !important; }
+
+html {
+	background: var(--color0);
+  height: auto;
+}
+
+body {
+  background: transparent;
+}
+
+a,
+a:hover,
+a:focus {
+	color: var(--color4);
+}
+
+
+/*************** header ***************/
+
+header {
+	padding: 0.5em 0 0.5em 0;
+}
+
+/* 트게더 로고 ( 없으면 주석처리 하세요 ) */
+header .row>div:nth-child(1)>a {
+	display: block;
+	width: var(--logoWidth);
+	height: 50px;
+	background: var(--logoURL) no-repeat;
+	background-size: auto 50px;
+}
+
+/* 기본 트게더 로고 제거 ( 없으면 주석처리 하세요 ) */
+header .row>div:nth-child(1) > a > img {
+	display: none;
+}
+
+/* 검색 창 */
+header #right-search-form>input[type='text'] {
+	border: 2px solid var(--color4);
+}
+
+/* 검색 버튼 */
+header #right-search-form>#right-search-btn {
+	color: var(--color4);
+}
+
+/* 상단바 */
+header #header-bar {
+	margin-bottom: 0.5em;
+}
+
+header #header-bar>.row {
+	border: 2px solid var(--color4);
+}
+
+/* 전광판 */ header #header-bar #header-top-notice strong.notice-badge,
+/* 트게더 알림 */ header #header-bar #header-menu-right #userDropdown #notification-badge {
+	background: var(--color4);
+}
+
+
+/*************** main ***************/
+
+/* 트게더 메뉴 */
+#main .menu-wrapper {
+	background: white;
+	border: 2px solid var(--color4);
+	width: 180px;
+}
+
+#main .menu-wrapper > a {
+	padding: 0.35em 0.5em 0.35em 0.5em;
+	letter-spacing: -0.05em;
+}
+
+#main .menu-wrapper > a:hover {
+	background-color: var(--color2);
+}
+
+#main .menu-wrapper .spacer {
+	background: var(--color4);
+	height: 2px;
+}
+
+#main .menu-wrapper>.header {
+	background: var(--color4);
+}
+
+#main .menu-wrapper>a>em,
+#main .menu-wrapper>a>i.fa.fa-square {
+	color: var(--color4);
+}
+
+/* 게시글 프레임 */
+#main #main-content>div.frame {
+	background: transparent;
+	border: none;
+}
+
+
+/*************** board ***************/
+
+#board-info {
+	margin: 0;
+	height: auto;
+	background: white;
+	border: 2px solid var(--color4);
+	margin-bottom: 0.5em;
+}
+
+#board-info h1 {
+	margin-top: 12px;
+	font-size: 28px;
+	border-bottom: 2px solid var(--color4);
+	width: calc(100% - 100px); /* 스트리머 게시판 적용시 */
+}
+
+#board-info h1>a:hover,
+#board-info h1>a:focus {
+	color: var(--color4);
+}
+
+#board-info #board-info-bottom a {
+	color: var(--color4);
+	font-size: 14px;
+}
+
+#board-info > #board-info-bottom {
+	margin-top: 10px;
+}
+
+#board-info>img,
+#board-info>h1,
+#board-info>#board-info-bottom {
+	float: left!important;
+}
+
+#board-info>img#board-info-profile-img {
+	width: 80px;
+	margin-right: 15px;
+	border: 2px solid var(--color4);
+  border-radius: 0;
+}
+
+#board-info #viewers-area #viewers:before {
+	content: var(--before);
+	cursor: text;
+}
+
+#board-info #viewers-area #viewers:after {
+	content: var(--after);
+	cursor: text;
+}
+
+
+/*************** article ***************/
+
+.frame>.frame,
+#article-list {
+	background: white;
+	border: 2px solid var(--color4);
+}
+
+/* 공지 숨기기 버튼 */
+#article-list #article-option-area {
+	right: 2px;
+	top: 2px;
+}
+
+#article-list #article-option-area> #article-option-area-toggle-btn {
+	background: #eaeaea;
+	width: 34px;
+	height: 34px;
+	border: 2px solid;
+	line-height: inherit;
+}
+
+/* 카테고리 */
+#article-list #article-list-category {
+	background: transparent;
+	border: none;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+#article-list #article-list-category>a {
+	background: transparent;
+  color: var(--color4);
+	position: relative;
+}
+
+#article-list #article-list-category>a::before {
+	top: 0;
+}
+
+#article-list #article-list-category>a::after {
+	bottom: 0;
+}
+
+#article-list #article-list-category>a::before,
+#article-list #article-list-category>a::after {
+	height: 2px;
+	width: 100%;
+	background: var(--color4);
+	content: "";
+	position: absolute;
+	left: 0px;
+	transform: scaleX(0);
+}
+
+#article-list #article-list-category>a:hover::before,
+#article-list #article-list-category>a:hover::after {
+	transform: scaleX(1);
+}
+
+/* 게시글 */
+#article-list>.article-list-row {
+	border: none;
+}
+
+#article-list>.article-list-row:hover,
+#article-list>.article-list-row:focus {
+	background-color: var(--color2);
+}
+
+#article-list>.article-list-row.notice {
+	background-color: var(--color3);
+}
+
+#article-list>.article-list-row.notice:hover,
+#article-list>.article-list-row.notice:focus,
+#article-list>.article-list-row.hot:hover,
+#article-list>.article-list-row.hot:focus {
+	background-color: var(--color5);
+}
+
+#article-list>.article-list-row>.item>.list-header {
+	border-left: none;
+}
+
+/* 게시글 추천 수 */
+#article-list>.article-list-row>.item>.list-header>span {
+	background: var(--color4);
+}
+
+/* 게시글 추천 수 0 */
+#article-list>.article-list-row>.item>.list-header.v0>span,
+#article-list>.article-list-row>.item>.list-header.v0>span:hover {
+    color: transparent !important;
+    background-color: transparent !important;
+}
+
+/* 게시글 댓글 수 */
+#article-list>.article-list-row>.item>.list-title>small.comment-count {
+	color: var(--color4);
+}
+
+/* 로그인한 게시글 작성자 */
+#article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
+	color: var(--color4);
+}
+
+/* 게시글 검색 창 */
+#article-list #boardSearchForm .form-control {
+	border-color: var(--color4);
+}
+
+/* 게시글 본문 */
+#article-info {
+	background: white;
+	border: 2px solid var(--color4);
+	border-bottom: 1px;
+	margin-top: 0.5em;
+}
+
+#article-info>h2 {
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+#article-info #article-info-writer,
+#article-content-wrapper>.header>#article-time {
+	margin-left: 8px;
+}
+
+#article-content-wrapper>.header>#article-views {
+	margin-right: 8px;
+}
+
+#article-content-wrapper {
+	padding: 0;
+	background: white;
+	border: 2px solid var(--color4);
+	border-bottom: 1px;
+}
+
+#article-content-wrapper>.header {
+	border-top: none;
+	border-bottom: 2px solid var(--color4);
+	background: transparent;
+}
+
+#article-content-wrapper #article-content {
+	margin: 0.5em;
+	border: none;
+}
+
+#article-content-wrapper>.footer {
+	border-top: 2px solid var(--color4);
+	background: white;
+}
+
+#article-neighbor-list {
+    border: 2px solid var(--color4);
+    background: white;
+}
+
+#article-neighbor-list>div:hover,
+#article-neighbor-list>div:focus {
+	background: linear-gradient(to right, white, var(--color2), white);
+}
+
+#article-neighbor-list>div>a,
+#article-neighbor-list>div>span.indicator,
+#article-neighbor-list>div>span.author {
+	color: var(--color4);
+}
+
+/* 댓글 */
+#article-reply-area {
+	padding: 0;
+	background: white;
+	border: 2px solid var(--color4);
+	margin-bottom: 1em;
+}
+
+#article-reply-area > .header h5 {
+	color: var(--color4);
+}
+
+#article-reply-area #reply-real-area .reply.active,
+#article-reply-area #reply-best-area .reply.active {
+	background-color: var(--color2);
+}
+
+#article-reply-area #reply-real-area .reply > .reply-header,
+#article-reply-area #reply-best-area .reply > .reply-header {
+	padding: 0.3em 0.5em;
+	background: #fcfcfc;
+}
+
+#article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged,
+#article-reply-area #reply-best-area .reply > .reply-header > .reply-writer.logged {
+	color: var(--color4);
+}
+
+.fr-toolbar.fr-top {
+	border-top: 3px solid var(--color4);
+}
+
+.fr-toolbar .fr-command.fr-btn,
+.fr-popup .fr-command.fr-btn {
+	color: var(--color4);
+}
+
+.fr-toolbar .fr-command.fr-btn.fr-dropdown::after,
+.fr-popup .fr-command.fr-btn.fr-dropdown::after {
+	border-top: 4px solid var(--color4);
+}
+
+/* 트게더 페이지 */
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>span,
+.pagination>.active>span:focus {
+	background-color: var(--color4);
+	border-color: var(--color4);
+}
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>li>a:hover,
+.pagination>li>span:hover {
+	background-color: white;
+	border-color: var(--color4);
+	color: var(--color4);
+}
+.pagination>li>a,
+.pagination>li>a:focus,
+.pagination>li>span
+.pagination>li>span:focus {
+	color: var(--color4);
+	background: transparent;
+}
+
+/* 드롭다운 */
+.dropdown.open .dropdown-menu,
+.input-group-btn.open .dropdown-menu {
+	border: 2px solid var(--color4);
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.275);
+}
+
+.dropdown .dropdown-menu,
+.input-group-btn .dropdown-menu {
+	padding: 8px 0 3px 0px;
+}
+
+.dropdown-menu>li>a:hover {
+	background: transparent;
+}
+
+#latestDropdownMenu>li>a>span.delrow,
+#favoriteDropdownMenu>li>a>span.delrow {
+	color: var(--color4);
+}
+
+#latestDropdownMenu>li>a>span.delrow:hover,
+#favoriteDropdownMenu>li>a>span.delrow:hover {
+	background: transparent;
+}
+
+#favoriteDropdownMenu>li>a>span.label.label-default {
+	background-color: var(--color4);
+}
+
+.dropdown-menu .divider {
+	background-color: var(--color4);
+	height: 2px;
+	margin: 3px 0;
+}
+
+/* 버튼 */
+.btn {
+	color: #fff !important;
+	background-color: var(--color4) !important;
+	border-color: var(--color4) !important;
+  border-radius: 0;
+}
+
+.btn:hover,
+.btn:focus {
+	color: var(--color4) !important;
+	background-color: #fff !important;
+}
+
+.btn.square {
+	margin-right: -2px;
+}

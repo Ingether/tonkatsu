@@ -1,0 +1,914 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>우정잉 - 트게더</title>
+    <meta name="author" content="트게더" />
+    <meta name="description" content="트게더는 한국 트위치 TV 커뮤니티입니다. 트위치 TV 스트리머들과 시청자들이 만들어가는 다양한 컨텐츠를 확인해 보세요." />
+    <meta name="robots" content="index, follow" />
+    <link rel="shortcut icon" href="https://d4fodtu7cqfym.cloudfront.net/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://d4fodtu7cqfym.cloudfront.net/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://d4fodtu7cqfym.cloudfront.net/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://d4fodtu7cqfym.cloudfront.net/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://d4fodtu7cqfym.cloudfront.net/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://d4fodtu7cqfym.cloudfront.net/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://d4fodtu7cqfym.cloudfront.net/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://d4fodtu7cqfym.cloudfront.net/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://d4fodtu7cqfym.cloudfront.net/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://d4fodtu7cqfym.cloudfront.net/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="https://d4fodtu7cqfym.cloudfront.net/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://d4fodtu7cqfym.cloudfront.net/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://d4fodtu7cqfym.cloudfront.net/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://d4fodtu7cqfym.cloudfront.net/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://d4fodtu7cqfym.cloudfront.net/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#70b7ff">
+    <meta name="msapplication-TileImage" content="https://d4fodtu7cqfym.cloudfront.net/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#70b7ff">
+    <link rel="stylesheet" type="text/css" href="https://d4fodtu7cqfym.cloudfront.net/b9b8276ab762ba14dca24388531dbe1e.min.css?v=1903033">
+    <style type="text/css">/* mobile.css */
+ @import url("https://ingether.github.io/tonkatsu/css//mobile.css");</style>    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-71349615-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </head>
+  <body>
+    <header>
+      <div id="header-search-bar" class="hide">
+        <form action="/search" method="get" id="header-search-form">
+          <a href="#" id="header-close-search-btn"><i class="fa fa-arrow-left"></i></a>
+          <input type="text" placeholder="트게더 검색" value="" id="header-search-input" name="q">
+          <button type="submit" id="header-search-btn"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+
+      <div id="header-area" class="">
+        <a id="header-bar-link" href="#"><i class="fa fa-bars"></i></a>
+        <a href="/notify/lists" class="badge badge-pill badge-danger hide" id="header-notification-badge">0</a>
+        <a href="/"><h1>트게더</h1></a>
+        <a id="header-search-link" href="#"><i class="fa fa-search"></i></a>
+      </div>
+    </header>
+
+    <div id="header-top-notice" align="center">
+      &nbsp;
+    </div>
+
+        <!--div class="row"><div class="col-xs-12"><div class="alert alert-info" style="margin:0"><i class="fa fa-wrench"></i> 현재 트게더 데이터베이스 개선 작업 중입니다. <a href="/13440939">[자세한 내용 보기]</div></div></div-->
+
+    <div id="nav-overlay" class="hide"></div>
+    <nav id="nav" class="hide">
+      <div id="nav-upper">
+        <a href="#" id="header-close-bar-link"><i class="fa fa-bars"></i></a>
+        <div class="dropdown" id="userDropdownContainer">
+          <a href="#" class="dropdown-toggle" id="userDropdown" data-toggle="dropdown">
+                        <span class="badge badge-pill badge-danger hide" id="notification-badge">0</span>
+            <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/e8dd63a6-8751-4151-b642-e7d53564bd04-profile_image-300x300.png" alt="" class="profile-img">
+             </span></a>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                      <li><a href="/notify/lists">새로운 알림 (<strong id="notification-badge-ea">0</strong>개)</a></li>
+            <li><a href="#"><img src="https://static-cdn.jtvnw.net/badges/v1/225f42fe-eacd-4346-b4b6-3a6640b29183/1" align="absmiddle"> <strong>잉게더</strong> <small>ingether</small></a></li>
+            <li><a href="/member/point"><strong>247</strong> 포인트</a></li>
+            <li class="divider"></li>
+                          <li><a href="/member/auth" style="color:blue;">본인인증</a></li>
+                        <li><a href="/member/config">설정</a></li>
+            <li><a href="/member/mylist">글 보관함</a></li>
+            <li><a href="/member/badge">아이콘 보관함</a></li>
+            <li><a href="/member/logout">로그아웃</a></li>
+                    </ul>
+        </div>
+        <div class="dropdown" id="noteDropdownContainer">
+          <a href="/note/lists" class="dropdown-toggle">
+                        <span class="badge badge-pill badge-danger hide" id="note-notification-badge">0</span>
+                            
+            <i class="fa fa-envelope-o"></i> </span>
+          </a>
+        </div>
+      </div>
+      <div id="nav-upper-shortcut">
+        <div class="dropdown">
+          <a href="#" class="dropdown-toggle" id="latestDropdown" data-toggle="dropdown">
+            <i class="fa fa-clock-o"></i> 최근방문</span>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="latestDropdown" id="latestDropdownMenu"></ul>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="dropdown-toggle" id="favoriteDropdown" data-toggle="dropdown">
+            <i class="fa fa-star"></i> 즐겨찾기</span>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="favoriteDropdown" id="favoriteDropdownMenu"></ul>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="dropdown-toggle" id="playgroundDropdown" data-toggle="dropdown">
+            <i class="fa fa-smile-o"></i> 놀이터</span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="playgroundDropdown" id="playgroundDropdownMenu">
+            <li><a href="/play/attendance">출석체크</a></li>
+            <li><a href="/play/ad">전광판</a></li>
+            <li><a href="/play/iconshop">아이콘샵</a></li>
+            <li><a href="/play/giveaway">포인트경품</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="nav-header">트게더 전체 메뉴</div>
+      <div class="nav-menu-area">
+        <div class="left">
+          <a class="nav-menu " href="/all">전체 글 보기</a>
+          <hr>
+          <a class="nav-menu " href="/streamer">스트리머 게시판</a>
+          <a class="nav-menu " href="/community">커뮤니티 <sup style="color:#c00;">BETA</sup></a>
+          <a class="nav-menu " href="/clips/lists">핫클립</a>
+          <hr>
+          <a class="nav-menu "href="/notice">공지사항</a>
+          <a class="nav-menu "href="/event">이벤트</a>
+        </div><div class="right">
+          <a class="nav-menu "href="/esports">게임대회</a>
+          <hr>
+          <a class="nav-menu "href="/qna">Q&amp;A</a>
+          <a class="nav-menu "href="/tip">방송 TIP</a>
+          <a class="nav-menu "href="/pr">방송홍보</a>
+          <a class="nav-menu "href="/recruit_new">구인구직</a>
+        </div>
+      </div>
+
+      <div class="nav-header">유용한 사이트</div>
+      <div class="nav-menu-area">
+        <div class="left">
+          <a class="useful-links" href="https://twitch.tv" target="_blank">트위치</a>
+          <a class="useful-links" href="https://twip.kr" target="_blank">Twip</a>
+          <a class="useful-links" href="https://battle.dog" target="_blank">Battle.dog</a>
+        </div><div class="right">
+          <a class="useful-links" href="https://www.twitch.tv/creatorcamp/ko-kr" target="_blank">스트리머 캠프</a>
+          <a class="useful-links" href="https://goo.gl/forms/ALDa2tEqh31kYmCm1" target="_blank">파트너 스포트라이트</a>
+        </div>
+      </div>
+
+            <div class="nav-header"><a href="/schedule" class="schedule-link" data-type="header">트위치 스케줄</a></div>
+            <div id="nav-schedule-list">
+            <a href="https://www.twitch.tv/soleil5813" target="_blank" class="schedule-link" data-type="https://www.twitch.tv/soleil5813">
+        <span class="label label-danger live">LIVE</span>        <div class="time">
+                        12:01 -
+                    </div>
+        <div class="title"><img src="https://upload.tgd.kr/gameicon/bd.png" width="18" height="18" align="absmiddle"> 제3회 당당당 연승전 &lt;노 전설부&gt;</div>
+        <span class="icons">
+                  </span>
+      </a>
+            <a href="https://www.twitch.tv/ggosama" target="_blank" class="schedule-link" data-type="https://www.twitch.tv/ggosama">
+        <span class="label label-danger live">LIVE</span>        <div class="time">
+                        14:00 -
+                    </div>
+        <div class="title"><img src="https://upload.tgd.kr/gameicon/bd.png" width="18" height="18" align="absmiddle"> 마이크론 크루셜배 꼬게임 드래곤볼 파이터즈 온라인 최강자전 #53</div>
+        <span class="icons">
+                  </span>
+      </a>
+            <a href="https://www.twitch.tv/kimchoonsam" target="_blank" class="schedule-link" data-type="https://www.twitch.tv/kimchoonsam">
+        <span class="label label-danger live">LIVE</span>        <div class="time">
+                        16:00 -
+                    </div>
+        <div class="title"><img src="https://upload.tgd.kr/gameicon/bd.png" width="18" height="18" align="absmiddle"> 샘컵 SAM Cup #5</div>
+        <span class="icons">
+                  </span>
+      </a>
+            <a href="https://twitch.tv/yjs1104" target="_blank" class="schedule-link" data-type="https://twitch.tv/yjs1104">
+                <div class="time">
+                        21:00 -
+                    </div>
+        <div class="title"><img src="https://upload.tgd.kr/gameicon/bd.png" width="18" height="18" align="absmiddle"> 제1회 LoL 칼바람나락 스트리머 랜덤 팀 대회</div>
+        <span class="icons">
+                  </span>
+      </a>
+            </div>
+      <a href="/schedule" class="schedule-more schedule-link" data-type="more">스케줄 더 보기 &raquo;</a>
+          </nav>
+
+    <div id="main-content">
+      <div class="frame"><div align="center" style="background:#fff;">
+<!-- tgd_board_list_mobile_320x50 -->
+<ins class="adsbygoogle"
+        style="display:inline-block;width:320px;height:50px"
+        data-ad-client="ca-pub-5807968391783575"
+        data-ad-slot="2664447824"></ins>
+</div>
+
+<div id="board-info" data-owner-id="150664679" data-type="streamer" data-alias="nanajam777" data-name="우정잉">
+    <h1>
+            <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/7c2f0583-ce5f-465f-b165-4a1b10046316-profile_image-300x300.png" alt="" id="board-info-profile-img" class="img-rounded">
+            <a href="/nanajam777">우정잉</a>
+
+                  <span class="badge badge-success">4위</span>
+            
+      
+      <span id="viewers-area" class="hide"><i class="fa fa-user"></i> <span id="viewers">0</span></span>
+    </h1>
+    
+        <a class="board-right-menu" href="/clips?streamer_id=150664679" id="goClipBtn"><i class="fa fa-film"></i></a>
+    <a class="board-right-menu" target="_blank" href="//twitch.tv/nanajam777"><i class="fa fa-twitch"></i></a>
+    <a class="board-right-menu" href="/nanajam777/profile"><i class="fa fa-info-circle"></i></a>
+    <a class="board-right-menu" href="/nanajam777/point"><i class="fa fa-money"></i></a>    
+        <a class="board-right-menu" href="#" data-id="1690075" id="addFavoriteBtn" title="즐겨찾기에 추가">
+                <i class="fa fa-star"></i>
+                <small style="font-size: 12px; vertical-align: 2px;">2,061</small>
+    </a></div><div id="article-list">
+<div id="article-option-area">
+    <input type="checkbox" id="hide_notice" class="hide">
+    <button id="article-option-area-toggle-btn"><i class="fa fa-eye"></i></button>
+</div>
+<div id="article-list-category">
+    <a class="nav-link active" href="/nanajam777"><i class="fa fa-home"></i></a><a style="color:#308118" class="nav-link " href="/nanajam777?category=1692096">잡담</a><a style="color:#000000" class="nav-link " href="/nanajam777?category=1692103">공지</a><a style="color:#ff9efc" class="nav-link " href="/nanajam777?category=2879162">방송 일정</a><a style="color:#0097ff" class="nav-link " href="/nanajam777?category=17459736">후기</a><a style="color:#a632b4" class="nav-link " href="/nanajam777?category=1692098">게임 추천</a><a style="color:#e02c2c" class="nav-link " href="/nanajam777?category=1880130">영상</a><a style="color:#d3a32e" class="nav-link " href="/nanajam777?category=1880132">팬아트&짤</a><a style="color:#5235ce" class="nav-link " href="/nanajam777?category=1880150">움짤/캡쳐</a><a style="color:#1c9694" class="nav-link " href="/nanajam777?category=1880194">정보</a></div>
+
+            <div class="article-list-row has-category notice  " id="article-list-row-20254723">
+      <div class="item">
+      <div class="list-header v46">
+          <strong>공지</strong>      </div>
+      <a title="~ 트수가왕 참여 공지 ~" href="/20254723" style="color:#000000" class="list-title">
+          
+                    <span class="a-badge"><i class="fa fa-info-circle"></i></span>
+                    <span class="title-value">~ 트수가왕 참여 공지 ~</span>
+                    <small class="comment-count">[20]</small>
+                              
+          <div class="list-writer  logged">
+                            <span>
+                  <img src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png" alt="Broadcaster" title="Broadcaster" align="absmiddle" />                   우정잉              </span>
+
+                        </div>
+                </a>
+      <div class="list-time">
+          15:34      </div>
+      </div>
+    </div>
+            <div class="article-list-row has-category notice  " id="article-list-row-9573285">
+      <div class="item">
+      <div class="list-header v40">
+          <strong>공지</strong>      </div>
+      <a title="우정잉 방송 Twip 도네시 움짤 & 시그니처 사운드!" href="/9573285" style="color:#000000" class="list-title">
+          
+                    <span class="a-badge"><i class="fa fa-info-circle"></i></span>
+                    <span class="title-value">우정잉 방송 Twip 도네시 움짤 & 시그니처 사운드!</span>
+                    <small class="comment-count">[24]</small>
+                              
+          <div class="list-writer  logged">
+                            <span>
+                  <img src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png" alt="Broadcaster" title="Broadcaster" align="absmiddle" />                   우정잉              </span>
+
+                        </div>
+                </a>
+      <div class="list-time">
+          09-05      </div>
+      </div>
+    </div>
+            <div class="article-list-row has-category notice  " id="article-list-row-7146589">
+      <div class="item">
+      <div class="list-header v37">
+          <strong>공지</strong>      </div>
+      <a title="꼭 봐야하는 글은 여기에 댓글을..." href="/7146589" style="font-weight:bold;color:#ff2828" class="list-title">
+          
+                    <span class="a-badge"><i class="fa fa-info-circle"></i></span>
+                    <span class="title-value">꼭 봐야하는 글은 여기에 댓글을...</span>
+                    <small class="comment-count">[4]</small>
+                              
+          <div class="list-writer  logged">
+                            <span>
+                  <img src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png" alt="Broadcaster" title="Broadcaster" align="absmiddle" />                   우정잉              </span>
+
+                        </div>
+                </a>
+      <div class="list-time">
+          07-16      </div>
+      </div>
+    </div>
+            <div class="article-list-row has-category notice  " id="article-list-row-6240151">
+      <div class="item">
+      <div class="list-header v93">
+          <strong>공지</strong>      </div>
+      <a title="트게더 규칙" href="/6240151" style="font-weight:bold;color:#000000" class="list-title">
+          
+                    <span class="a-badge"><i class="fa fa-info-circle"></i></span>
+                    <span class="title-value">트게더 규칙</span>
+                    <small class="comment-count">[77]</small>
+                              
+          <div class="list-writer  logged">
+                            <span>
+                  <img src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png" alt="Broadcaster" title="Broadcaster" align="absmiddle" />                   우정잉              </span>
+
+                        </div>
+                </a>
+      <div class="list-time">
+          06-27      </div>
+      </div>
+    </div>
+            <div class="article-list-row has-category notice  " id="article-list-row-5350072">
+      <div class="item">
+      <div class="list-header v23">
+          <strong>공지</strong>      </div>
+      <a title="우정 위키" href="/5350072" style="color:#000000" class="list-title">
+          
+                    <span class="a-badge"><i class="fa fa-info-circle"></i></span>
+                    <span class="title-value">우정 위키</span>
+                    <small class="comment-count">[28]</small>
+                              
+          <div class="list-writer  logged">
+                            <span>
+                  <img src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png" alt="Broadcaster" title="Broadcaster" align="absmiddle" />                   우정잉              </span>
+
+                        </div>
+                </a>
+      <div class="list-time">
+          06-08      </div>
+      </div>
+    </div>
+            <div class="article-list-row has-category  hot " id="article-list-row-20247059">
+      <div class="item">
+      <div class="list-header v72">
+          <b>인기</b>      </div>
+      <a title="3월 30일은 휴방입니다!" href="/20247059?page=1" style="color:#000000" class="list-title">
+          
+                    <span class="a-badge"><i class="fa fa-star"></i></span>
+                    <span class="title-value">3월 30일은 휴방입니다!</span>
+                    <small class="comment-count">[54]</small>
+                              
+          <div class="list-writer  logged">
+                            <span>
+                  <img src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png" alt="Broadcaster" title="Broadcaster" align="absmiddle" />                   우정잉              </span>
+
+                                <div class="list-category"><span class="category" style="color:#ff9efc">방송 일정</span></div>
+                        </div>
+                </a>
+      <div class="list-time">
+          12:32      </div>
+      </div>
+    </div>
+            <div class="article-list-row has-category   " id="article-list-row-20265715">
+      <div class="item">
+      <div class="list-header v0">
+          <span>0</span>      </div>
+      <a title="새내기분들 술자리 꿀템하나 나왔어용~" href="/20265715" style="" class="list-title">
+          
+                    <span class="a-badge"><i class="fa fa-picture-o"></i></span>
+                    <span class="title-value">새내기분들 술자리 꿀템하나 나왔어용~</span>
+                    <small class="comment-count">[1]</small>
+                              
+          <div class="list-writer  logged">
+                            <span>
+                  <img src="https://static-cdn.jtvnw.net/badges/v1/dad6e838-930f-4f08-9f44-a31108551a5a/1" align="absmiddle">                   배범              </span>
+
+                                <div class="list-category"><span class="category" style="color:#308118">잡담</span></div>
+                        </div>
+                </a>
+      <div class="list-time">
+          19:12      </div>
+      </div>
+    </div>
+            <div class="article-list-row has-category   " id="article-list-row-20265526">
+      <div class="item">
+      <div class="list-header v1">
+          <span>1</span>      </div>
+      <a title="[모바일] 스텔라폭스 - 감성 라인드로잉 퍼즐" href="/20265526" style="" class="list-title">
+          
+                    <span class="a-badge"><i class="fa fa-picture-o"></i></span>
+                    <span class="title-value">[모바일] 스텔라폭스 - 감성 라인드로잉 퍼즐</span>
+                              
+          <div class="list-writer  logged">
+                            <span>
+                  <img src="https://upload.tgd.kr/icon/icn_etc.png" align="absmiddle">                   단델리온              </span>
+
+                                <div class="list-category"><span class="category" style="color:#a632b4">게임 추천</span></div>
+                        </div>
+                </a>
+      <div class="list-time">
+          19:10      </div>
+      </div>
+    </div>
+            <div class="article-list-row has-category   " id="article-list-row-20265080">
+      <div class="item">
+      <div class="list-header v2">
+          <span>2</span>      </div>
+      <a title="우정잉님께 하나만 부탁하고싶은것." href="/20265080" style="" class="list-title">
+          
+                    <span class="a-badge"><i class="fa fa-commenting-o"></i></span>
+                    <span class="title-value">우정잉님께 하나만 부탁하고싶은것.</span>
+                    <small class="comment-count">[4]</small>
+                              
+          <div class="list-writer  logged">
+                            <span>
+                  <img src="https://static-cdn.jtvnw.net/badges/v1/dad6e838-930f-4f08-9f44-a31108551a5a/1" align="absmiddle">                   띵스              </span>
+
+                                <div class="list-category"><span class="category" style="color:#308118">잡담</span></div>
+                        </div>
+                </a>
+      <div class="list-time">
+          19:02      </div>
+      </div>
+    </div>
+            <div class="article-list-row has-category   " id="article-list-row-20264860">
+      <div class="item">
+      <div class="list-header v5">
+          <span>5</span>      </div>
+      <a title="이러면 안대는데.." href="/20264860" style="" class="list-title">
+          
+                    <span class="a-badge"><i class="fa fa-commenting-o"></i></span>
+                    <span class="title-value">이러면 안대는데..</span>
+                    <small class="comment-count">[12]</small>
+                              
+          <div class="list-writer  logged">
+                            <span>
+                                    탈_모              </span>
+
+                                <div class="list-category"><span class="category" style="color:#308118">잡담</span></div>
+                        </div>
+                </a>
+      <div class="list-time">
+          18:59      </div>
+      </div>
+    </div>
+            <div class="article-list-row has-category   " id="article-list-row-20264474">
+      <div class="item">
+      <div class="list-header v3">
+          <span>3</span>      </div>
+      <a title="휴뱅+주말인데 잘들 보내고 계시나요" href="/20264474" style="" class="list-title">
+          
+                    <span class="a-badge"><i class="fa fa-picture-o"></i></span>
+                    <span class="title-value">휴뱅+주말인데 잘들 보내고 계시나요</span>
+                    <small class="comment-count">[9]</small>
+                              
+          <div class="list-writer  logged">
+                            <span>
+                  <img src="https://static-cdn.jtvnw.net/badges/v1/dad6e838-930f-4f08-9f44-a31108551a5a/1" align="absmiddle">                   고기김치찌개              </span>
+
+                                <div class="list-category"><span class="category" style="color:#308118">잡담</span></div>
+                        </div>
+                </a>
+      <div class="list-time">
+          18:53      </div>
+      </div>
+    </div>
+            <div class="article-list-row has-category   " id="article-list-row-20263859">
+      <div class="item">
+      <div class="list-header v11">
+          <span>11</span>      </div>
+      <a title="ㅊㅅㅅ 생각하다 떠오른건데" href="/20263859" style="" class="list-title">
+          
+                    <span class="a-badge"><i class="fa fa-star"></i></span>
+                    <span class="title-value">ㅊㅅㅅ 생각하다 떠오른건데</span>
+                    <small class="comment-count">[11]</small>
+                              
+          <div class="list-writer  logged">
+                            <span>
+                  <img src="https://static-cdn.jtvnw.net/badges/v1/dad6e838-930f-4f08-9f44-a31108551a5a/1" align="absmiddle">                   우정사이버대학총장              </span>
+
+                                <div class="list-category"><span class="category" style="color:#308118">잡담</span></div>
+                        </div>
+                </a>
+      <div class="list-time">
+          18:43      </div>
+      </div>
+    </div>
+            <div class="article-list-row has-category   " id="article-list-row-20263630">
+      <div class="item">
+      <div class="list-header v8">
+          <span>8</span>      </div>
+      <a title="방장님 와서 덕질 하고 가세요" href="/20263630" style="" class="list-title">
+          
+                    <span class="a-badge"><i class="fa fa-picture-o"></i></span>
+                    <span class="title-value">방장님 와서 덕질 하고 가세요</span>
+                    <small class="comment-count">[11]</small>
+                              
+          <div class="list-writer  logged">
+                            <span>
+                  <img src="https://static-cdn.jtvnw.net/badges/v1/dad6e838-930f-4f08-9f44-a31108551a5a/1" align="absmiddle">                   베리콜드              </span>
+
+                                <div class="list-category"><span class="category" style="color:#308118">잡담</span></div>
+                        </div>
+                </a>
+      <div class="list-time">
+          18:39      </div>
+      </div>
+    </div>
+            <div class="article-list-row has-category   " id="article-list-row-20261983">
+      <div class="item">
+      <div class="list-header v8">
+          <span>8</span>      </div>
+      <a title="니들은 이런거 하지마라..." href="/20261983" style="" class="list-title">
+          
+                    <span class="a-badge"><i class="fa fa-commenting-o"></i></span>
+                    <span class="title-value">니들은 이런거 하지마라...</span>
+                    <small class="comment-count">[12]</small>
+                              
+          <div class="list-writer  logged">
+                            <span>
+                                    안전제잉              </span>
+
+                                <div class="list-category"><span class="category" style="color:#308118">잡담</span></div>
+                        </div>
+                </a>
+      <div class="list-time">
+          18:11      </div>
+      </div>
+    </div>
+            <div class="article-list-row has-category   " id="article-list-row-20261781">
+      <div class="item">
+      <div class="list-header v5">
+          <span>5</span>      </div>
+      <a title="스포없는 영화 어스 후기" href="/20261781" style="" class="list-title">
+          
+                    <span class="a-badge"><i class="fa fa-picture-o"></i></span>
+                    <span class="title-value">스포없는 영화 어스 후기</span>
+                    <small class="comment-count">[3]</small>
+                              
+          <div class="list-writer  logged">
+                            <span>
+                  <img src="https://static-cdn.jtvnw.net/badges/v1/dad6e838-930f-4f08-9f44-a31108551a5a/1" align="absmiddle">                   우정사이버대학총장              </span>
+
+                                <div class="list-category"><span class="category" style="color:#308118">잡담</span></div>
+                        </div>
+                </a>
+      <div class="list-time">
+          18:08      </div>
+      </div>
+    </div>
+            <div class="article-list-row has-category   " id="article-list-row-20261350">
+      <div class="item">
+      <div class="list-header v7">
+          <span>7</span>      </div>
+      <a title="잠시 편안하지는 짤." href="/20261350" style="" class="list-title">
+          
+                    <span class="a-badge"><i class="fa fa-picture-o"></i></span>
+                    <span class="title-value">잠시 편안하지는 짤.</span>
+                    <small class="comment-count">[4]</small>
+                              
+          <div class="list-writer  logged">
+                            <span>
+                  <img src="https://static-cdn.jtvnw.net/badges/v1/dad6e838-930f-4f08-9f44-a31108551a5a/1" align="absmiddle">                   수박초밥              </span>
+
+                                <div class="list-category"><span class="category" style="color:#308118">잡담</span></div>
+                        </div>
+                </a>
+      <div class="list-time">
+          18:01      </div>
+      </div>
+    </div>
+            <div class="article-list-row has-category   " id="article-list-row-20259382">
+      <div class="item">
+      <div class="list-header v12">
+          <span>12</span>      </div>
+      <a title="참관 신청하는 자세" href="/20259382" style="" class="list-title">
+          
+                    <span class="a-badge"><i class="fa fa-star"></i></span>
+                    <span class="title-value">참관 신청하는 자세</span>
+                    <small class="comment-count">[15]</small>
+                              
+          <div class="list-writer  logged">
+                            <span>
+                  <img src="https://static-cdn.jtvnw.net/badges/v1/dad6e838-930f-4f08-9f44-a31108551a5a/1" align="absmiddle">                   흰수염고래              </span>
+
+                                <div class="list-category"><span class="category" style="color:#308118">잡담</span></div>
+                        </div>
+                </a>
+      <div class="list-time">
+          17:25      </div>
+      </div>
+    </div>
+            <div class="article-list-row has-category   " id="article-list-row-20259373">
+      <div class="item">
+      <div class="list-header v1">
+          <span>1</span>      </div>
+      <a title="파크라이 뉴던 라디오 노래 찾아봤어여" href="/20259373" style="" class="list-title">
+          
+                    <span class="a-badge"><i class="fa fa-commenting-o"></i></span>
+                    <span class="title-value">파크라이 뉴던 라디오 노래 찾아봤어여</span>
+                    <small class="comment-count">[2]</small>
+                              
+          <div class="list-writer  logged">
+                            <span>
+                  <img src="https://static-cdn.jtvnw.net/badges/v1/dad6e838-930f-4f08-9f44-a31108551a5a/1" align="absmiddle">                   버튼              </span>
+
+                                <div class="list-category"><span class="category" style="color:#e02c2c">영상</span></div>
+                        </div>
+                </a>
+      <div class="list-time">
+          17:25      </div>
+      </div>
+    </div>
+            <div class="article-list-row has-category   " id="article-list-row-20258533">
+      <div class="item">
+      <div class="list-header v8">
+          <span>8</span>      </div>
+      <a title="참관 한자리 냄겨두세요ㅡㅡ" href="/20258533" style="" class="list-title">
+          
+                    <span class="a-badge"><i class="fa fa-picture-o"></i></span>
+                    <span class="title-value">참관 한자리 냄겨두세요ㅡㅡ</span>
+                    <small class="comment-count">[18]</small>
+                              
+          <div class="list-writer  logged">
+                            <span>
+                  <img src="https://static-cdn.jtvnw.net/badges/v1/1a93b37b-5ea1-4f65-83f7-a3d11687ea51/1" align="absmiddle">                   애긔겅듀요정천사우정잉              </span>
+
+                                <div class="list-category"><span class="category" style="color:#308118">잡담</span></div>
+                        </div>
+                </a>
+      <div class="list-time">
+          17:04      </div>
+      </div>
+    </div>
+            <div class="article-list-row has-category   " id="article-list-row-20258465">
+      <div class="item">
+      <div class="list-header v6">
+          <span>6</span>      </div>
+      <a title="현재 대구놀러왔음" href="/20258465" style="" class="list-title">
+          
+                    <span class="a-badge"><i class="fa fa-commenting-o"></i></span>
+                    <span class="title-value">현재 대구놀러왔음</span>
+                    <small class="comment-count">[7]</small>
+                              
+          <div class="list-writer  logged">
+                            <span>
+                                    마하비라              </span>
+
+                                <div class="list-category"><span class="category" style="color:#308118">잡담</span></div>
+                        </div>
+                </a>
+      <div class="list-time">
+          17:02      </div>
+      </div>
+    </div>
+            <div class="article-list-row has-category   " id="article-list-row-20257780">
+      <div class="item">
+      <div class="list-header v11">
+          <span>11</span>      </div>
+      <a title="근데 참관 지원자 겁나 많을 거 같은데" href="/20257780" style="" class="list-title">
+          
+                    <span class="a-badge"><i class="fa fa-star"></i></span>
+                    <span class="title-value">근데 참관 지원자 겁나 많을 거 같은데</span>
+                    <small class="comment-count">[14]</small>
+                              
+          <div class="list-writer  logged">
+                            <span>
+                  <img src="https://static-cdn.jtvnw.net/badges/v1/dad6e838-930f-4f08-9f44-a31108551a5a/1" align="absmiddle">                   우리집정수기고장났다히잉              </span>
+
+                                <div class="list-category"><span class="category" style="color:#308118">잡담</span></div>
+                        </div>
+                </a>
+      <div class="list-time">
+          16:43      </div>
+      </div>
+    </div>
+            <div class="article-list-row has-category   " id="article-list-row-20257766">
+      <div class="item">
+      <div class="list-header v9">
+          <span>9</span>      </div>
+      <a title="일름보 레전드" href="/20257766" style="" class="list-title">
+          
+                    <span class="a-badge"><i class="fa fa-picture-o"></i></span>
+                    <span class="title-value">일름보 레전드</span>
+                    <small class="comment-count">[3]</small>
+                              
+          <div class="list-writer  logged">
+                            <span>
+                  <img src="https://static-cdn.jtvnw.net/badges/v1/dad6e838-930f-4f08-9f44-a31108551a5a/1" align="absmiddle">                   우정사이버대학총장              </span>
+
+                                <div class="list-category"><span class="category" style="color:#308118">잡담</span></div>
+                        </div>
+                </a>
+      <div class="list-time">
+          16:43      </div>
+      </div>
+    </div>
+            <div class="article-list-row has-category   " id="article-list-row-20257400">
+      <div class="item">
+      <div class="list-header v7">
+          <span>7</span>      </div>
+      <a title="앗...내 돈 어디갔지" href="/20257400" style="" class="list-title">
+          
+                    <span class="a-badge"><i class="fa fa-picture-o"></i></span>
+                    <span class="title-value">앗...내 돈 어디갔지</span>
+                    <small class="comment-count">[2]</small>
+                              
+          <div class="list-writer  logged">
+                            <span>
+                  <img src="https://static-cdn.jtvnw.net/badges/v1/dad6e838-930f-4f08-9f44-a31108551a5a/1" align="absmiddle">                   우리집정수기코웨이              </span>
+
+                                <div class="list-category"><span class="category" style="color:#308118">잡담</span></div>
+                        </div>
+                </a>
+      <div class="list-time">
+          16:35      </div>
+      </div>
+    </div>
+            <div class="article-list-row has-category   " id="article-list-row-20257151">
+      <div class="item">
+      <div class="list-header v2">
+          <span>2</span>      </div>
+      <a title="오늘자 k리그" href="/20257151" style="" class="list-title">
+          
+                    <span class="a-badge"><i class="fa fa-picture-o"></i></span>
+                    <span class="title-value">오늘자 k리그</span>
+                    <small class="comment-count">[4]</small>
+                              
+          <div class="list-writer  logged">
+                            <span>
+                  <img src="https://static-cdn.jtvnw.net/badges/v1/dad6e838-930f-4f08-9f44-a31108551a5a/1" align="absmiddle">                   빌드업장인              </span>
+
+                                <div class="list-category"><span class="category" style="color:#308118">잡담</span></div>
+                        </div>
+                </a>
+      <div class="list-time">
+          16:29      </div>
+      </div>
+    </div>
+            <div class="article-list-row has-category   " id="article-list-row-20256623">
+      <div class="item">
+      <div class="list-header v5">
+          <span>5</span>      </div>
+      <a title="하 진짜" href="/20256623" style="" class="list-title">
+          
+                    <span class="a-badge"><i class="fa fa-commenting-o"></i></span>
+                    <span class="title-value">하 진짜</span>
+                    <small class="comment-count">[7]</small>
+                              
+          <div class="list-writer  logged">
+                            <span>
+                  <img src="https://static-cdn.jtvnw.net/badges/v1/dad6e838-930f-4f08-9f44-a31108551a5a/1" align="absmiddle">                   빌드업장인              </span>
+
+                                <div class="list-category"><span class="category" style="color:#308118">잡담</span></div>
+                        </div>
+                </a>
+      <div class="list-time">
+          16:15      </div>
+      </div>
+    </div>
+            <div class="article-list-row has-category   " id="article-list-row-20256385">
+      <div class="item">
+      <div class="list-header v19">
+          <span>19</span>      </div>
+      <a title="오프닝 무대는 우정잉님이 해주시겠죠?" href="/20256385" style="" class="list-title">
+          
+                    <span class="a-badge"><i class="fa fa-star"></i></span>
+                    <span class="title-value">오프닝 무대는 우정잉님이 해주시겠죠?</span>
+                    <small class="comment-count">[12]</small>
+                              
+          <div class="list-writer  logged">
+                            <span>
+                  <img src="https://static-cdn.jtvnw.net/badges/v1/dad6e838-930f-4f08-9f44-a31108551a5a/1" align="absmiddle">                   김막귀              </span>
+
+                                <div class="list-category"><span class="category" style="color:#308118">잡담</span></div>
+                        </div>
+                </a>
+      <div class="list-time">
+          16:09      </div>
+      </div>
+    </div>
+            <div class="article-list-row has-category   " id="article-list-row-20256199">
+      <div class="item">
+      <div class="list-header v9">
+          <span>9</span>      </div>
+      <a title="트수가왕때" href="/20256199" style="" class="list-title">
+          
+                    <span class="a-badge"><i class="fa fa-commenting-o"></i></span>
+                    <span class="title-value">트수가왕때</span>
+                    <small class="comment-count">[6]</small>
+                              
+          <div class="list-writer  logged">
+                            <span>
+                  <img src="https://static-cdn.jtvnw.net/badges/v1/bed574e4-b834-48a9-9571-e2fca8ca4822/1" align="absmiddle">                   태연한척하는              </span>
+
+                                <div class="list-category"><span class="category" style="color:#308118">잡담</span></div>
+                        </div>
+                </a>
+      <div class="list-time">
+          16:06      </div>
+      </div>
+    </div>
+            <div class="article-list-row has-category   " id="article-list-row-20256060">
+      <div class="item">
+      <div class="list-header v11">
+          <span>11</span>      </div>
+      <a title="노래잘알이 MC봐야 되는거아님?" href="/20256060" style="" class="list-title">
+          
+                    <span class="a-badge"><i class="fa fa-star"></i></span>
+                    <span class="title-value">노래잘알이 MC봐야 되는거아님?</span>
+                    <small class="comment-count">[12]</small>
+                              
+          <div class="list-writer  logged">
+                            <span>
+                  <img src="https://static-cdn.jtvnw.net/badges/v1/1a93b37b-5ea1-4f65-83f7-a3d11687ea51/1" align="absmiddle">                   애긔겅듀요정천사우정잉              </span>
+
+                                <div class="list-category"><span class="category" style="color:#308118">잡담</span></div>
+                        </div>
+                </a>
+      <div class="list-time">
+          16:04      </div>
+      </div>
+    </div>
+            <div class="article-list-row has-category   " id="article-list-row-20255016">
+      <div class="item">
+      <div class="list-header v12">
+          <span>12</span>      </div>
+      <a title="트수가왕 1등 포상이 뭘까요" href="/20255016" style="" class="list-title">
+          
+                    <span class="a-badge"><i class="fa fa-star"></i></span>
+                    <span class="title-value">트수가왕 1등 포상이 뭘까요</span>
+                    <small class="comment-count">[10]</small>
+                              
+          <div class="list-writer  logged">
+                            <span>
+                  <img src="https://static-cdn.jtvnw.net/badges/v1/dad6e838-930f-4f08-9f44-a31108551a5a/1" align="absmiddle">                   배범              </span>
+
+                                <div class="list-category"><span class="category" style="color:#308118">잡담</span></div>
+                        </div>
+                </a>
+      <div class="list-time">
+          15:41      </div>
+      </div>
+    </div>
+            <div class="article-list-row has-category   " id="article-list-row-20254988">
+      <div class="item">
+      <div class="list-header v4">
+          <span>4</span>      </div>
+      <a title="우부장님 저 글은 왜 위에 안보여요 ?-?" href="/20254988" style="" class="list-title">
+          
+                    <span class="a-badge"><i class="fa fa-picture-o"></i></span>
+                    <span class="title-value">우부장님 저 글은 왜 위에 안보여요 ?-?</span>
+                    <small class="comment-count">[6]</small>
+                              
+          <div class="list-writer  logged">
+                            <span>
+                  <img src="https://static-cdn.jtvnw.net/badges/v1/dad6e838-930f-4f08-9f44-a31108551a5a/1" align="absmiddle">                   공머              </span>
+
+                                <div class="list-category"><span class="category" style="color:#308118">잡담</span></div>
+                        </div>
+                </a>
+      <div class="list-time">
+          15:40      </div>
+      </div>
+    </div>
+            <div class="article-list-row has-category   " id="article-list-row-20254855">
+      <div class="item">
+      <div class="list-header v4">
+          <span>4</span>      </div>
+      <a title="트수의사연에 눈물흘리는.." href="/20254855" style="" class="list-title">
+          
+                    <span class="a-badge"><i class="fa fa-picture-o"></i></span>
+                    <span class="title-value">트수의사연에 눈물흘리는..</span>
+                    <small class="comment-count">[5]</small>
+                              
+          <div class="list-writer  logged">
+                            <span>
+                  <img src="https://static-cdn.jtvnw.net/badges/v1/dad6e838-930f-4f08-9f44-a31108551a5a/1" align="absmiddle">                   펭귄이다펭귄              </span>
+
+                                <div class="list-category"><span class="category" style="color:#308118">잡담</span></div>
+                        </div>
+                </a>
+      <div class="list-time">
+          15:37      </div>
+      </div>
+    </div>
+    
+    <div class="pagination-area">
+        <ul class='pagination'><li class='disabled'><li class='active'><a href='#'>1<span class='sr-only'></span></a></li><li><a href="/nanajam777/page/2" data-ci-pagination-page="2">2</a></li><li><a href="/nanajam777/page/3" data-ci-pagination-page="3">3</a></li><li><a href="/nanajam777/page/4" data-ci-pagination-page="4">4</a></li><li><a href="/nanajam777/page/2" data-ci-pagination-page="2" rel="next">&gt;</a></ul>    </div>
+
+    <div id="article-list-menu">
+        <a href="/nanajam777?filter_mode=best" class="btn square btn-default best"><i class="fa fa-star"></i> 인기글</a>
+                        <a href="/board/write/nanajam777" class="btn square btn-primary write"><i class="fa fa-pencil"></i> 글 쓰기</a>
+            </div>
+
+    <div class="pagination-area">
+            <form class="input-group" method="get" action="/nanajam777" id="boardSearchForm">
+                    <input type="hidden" name="search_type" value="title" />
+          <span class="input-group-btn">
+              <button type="button" class="btn square btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span id="search-type-desc">제목</span> <span class="caret"></span></button>
+              <div class="dropdown-menu">
+                  <li><a href="#" data-value="title">제목</a></li>
+                  <li><a href="#" data-value="titlecont">제목+내용</a></li>
+                  <li><a href="#" data-value="nickname">닉네임</a></li>
+              </div>
+          </span>
+          <input type="text" name="search_term" class="form-control" placeholder="검색어" value="">
+          <span class="input-group-btn">
+              <button class="btn square btn-default" type="submit"><i class="fa fa-search"></i></button>
+          </span>
+      </form>
+          </div>
+  </div></div>    </div>
+
+    <footer>
+      <div class="container">
+      <span>&copy; 2017-2018 트게더<br /><a href="/docs/policy.html" target="_blank">이용약관</a> | <a href="/docs/privacy.html" target="_blank">개인정보보호방침</a> | <a href="https://github.com/ejnkr/apply" target="_blank">채용</a> | <a href="/pages/adcontact">광고문의</a> | <a href="/support">고객지원</a><br />
+          트게더는 Twitch에서 운영하는 사이트가 아닙니다.<br /><br />
+          <a href="/?platform=pc" id="switch-platform-link">PC버전으로 전환하기</a></span>
+      </div>
+    </footer>
+
+    <a href="#" id="movetotop"><img src="https://d4fodtu7cqfym.cloudfront.net/images/move_to_top.png" alt=""></a>
+    <script type="text/javascript">var AD = [{"content":"\uc624\ub298 \uc0dd\uc77c\uc778 \uc0c8\uac00 \uc788\ub2e4?! \uc090\uc29d\ube60\uc29d\ubfcc\uc29d","link":"http:\/\/twitch.tv\/heavyrainism"},{"content":"\u2665\ubb34\uc9f8\uc57c \uc0dd\uc77c \ucd94\uce74\ud574\u2665\uc0ac\ub791\ud574\u2665","link":"https:\/\/tgd.kr\/heavyrainism"},{"content":"\uc5ec\uc7a5\uc744 \uc990\uae30\ub294 \ub0a8\ucea0\uc774 \uc788\ub2e4? \uc090\uc29d\ube60\uc29d\ubfcc\uc29d","link":"https:\/\/www.twitch.tv\/hong1250"},{"content":"\ub9e4\uc77c\ub9e4\uc77c \ucd1d\uad74\uc5d0\ub9cc \ub4e4\uc5b4\uac00\ub294 \uc2a4\ud2b8\ub9ac\uba38\uac00 \uc788\ub2e4?!","link":"https:\/\/www.twitch.tv\/shark2157"},{"content":"\uc5ec\ucea0)\ub2e4\uc774\uc544\uc778\ub300 \uc2e4\ubc84\uc5d0\uc11c\uc591\ud559\ub2f9\ud558\ub294 \uc2a4\ud2b8\ub9ac\uba38\uac00\uc788\ub2e4? \ubfcc\uc29d\ube60\uc29d","link":"https:\/\/www.twitch.tv\/anan7004"},{"content":"\ubd80\ub9ac\ucbb8\uc555\ucbb8\uc555 \ubc43\uc0b4\uc640\ub784\ub784\ub77c \ubb34\uc0c8\uc57c \uc0dd\uc77c \ucd95\ud558\ud574 ^^7 \ud3c9\uc0dd \uac00\uc790","link":"https:\/\/tgd.kr\/heavyrainism"},{"content":"\u2665\ud83c\udf89\uc0dd\uc77c\ucd95\ud558\ud574\uc694 \ubb34\uc0c8\uc528\ud83c\udf89\u2665","link":"https:\/\/tgd.kr\/heavyrainism"},{"content":"\ub178\ub798 \uc798\ubd80\ub974\uc2dc\ub294 \uc6b0\ub9ac \uac8c\uc784\uc2a4\ud2b8\ub9ac\uba38 \ubd04\ub2d8 \uc0dd\uc77c \ucd95\ud558\ub4dc\ub824\uc694!!","link":"https:\/\/www.twitch.tv\/haebomhaebom"},{"content":"\ud070\uc190 \uc9c0\ub3c4\uad50\uc218\ub2d8 \uc624\ub20c \uc8fc\uc2dd \ud30c\uc168\ub2e8\ub2e4~ \ubc30\ud2c0 \ubd99\uc744 \uc870\ub9c9\uc190\ub4e4 \uc640\ub77c~!","link":"https:\/\/www.twitch.tv\/didacheee"},{"content":"\uc774 \ud558\uaf2c\uac00 \ud314\ub85c\uc6b0 \ub9ac\uc561\uc158\uc774\ub77c\ub294\uac78 \ud574\ubd24\uc744\uae4c\uc694...","link":"https:\/\/www.twitch.tv\/jamwoo555"}];</script>
+    <script type="text/javascript" src="https://d4fodtu7cqfym.cloudfront.net/0a18972031b025305aa595c7f8b932f3.min.js?v=1903033"></script>
+    <script type="text/javascript" src="https://d4fodtu7cqfym.cloudfront.net/b89b4dd9a3030bde3bf7aae54e8ae019.min.js?v=1903033"></script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  </body>
+</html>
