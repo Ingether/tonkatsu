@@ -6,33 +6,34 @@
     --color4: #ccc078;
     --color5: #f7f1d9;
 
-	--logoURL: url(https://ingether.github.io/tonkatsu/assets/title.png);
-	--logoWidth: 158px;	 /* 로고 너비 */
+    --logoURL: url(https://ingether.github.io/tonkatsu/assets/title.png);
+    --logoWidth: 158px;
+    /* 로고 너비 */
 }
 
 body {
 
     background: var(--color3);
 
-        /* ex) background: #ffffff; */
+    /* ex) background: #ffffff; */
 
 }
 
 img[src*="https://static-cdn.jtvnw.net/badges/v1/dad6e838-930f-4f08-9f44-a31108551a5a/1"] {
-    background:url("https://ingether.github.io/tonkatsu/assets/icon.png") no-repeat;
-    background-size:18px;
-    width:18px;
-    height:18px;
-    padding-left:18px;
-     
-      
-   }
+    background: url("https://ingether.github.io/tonkatsu/assets/icon.png") no-repeat;
+    background-size: 18px;
+    width: 18px;
+    height: 18px;
+    padding-left: 18px;
+}
+
 /* 로고 */
 
 
 header>#header-area>a>h1 {
 
-    background: var(--logoURL) no-repeat; /* url(로고 경로 입력) */
+    background: var(--logoURL) no-repeat;
+    /* url(로고 경로 입력) */
 
     background-size: 96px 32px;
 
@@ -43,9 +44,10 @@ header>#header-area>a>h1 {
 /* 검색 창 */
 
 
-header > #header-search-bar #header-search-input {
+header>#header-search-bar #header-search-input {
 
-    border: 2px solid --color2; /* 검색창 테두리 색 */
+    border: 2px solid --color2;
+    /* 검색창 테두리 색 */
 
     border-radius: 15px;
 
@@ -54,10 +56,11 @@ header > #header-search-bar #header-search-input {
 
 /* 검색 버튼 */
 
-header > #header-search-bar #header-search-btn,
+header>#header-search-bar #header-search-btn,
 header>#header-area>#header-search-link {
 
-    color: var(--color4); /* 검색창 옆 돋보기 색 */
+    color: var(--color4);
+    /* 검색창 옆 돋보기 색 */
 
 }
 
@@ -67,9 +70,11 @@ header>#header-area>#header-search-link {
 
 header {
 
-    border-bottom: 4px solid var(--color2); /* 로고 배너 하단 구분선 색 */
+    border-bottom: 4px solid var(--color2);
+    /* 로고 배너 하단 구분선 색 */
 
-    background: var(--color4); /* 로고 배너 배경 색 */
+    background: var(--color4);
+    /* 로고 배너 배경 색 */
 
 }
 
@@ -79,7 +84,8 @@ header {
 
 #header-top-notice strong.notice-badge {
 
-    background: var(--color5); /* 광고 뱃지 배경 색 */
+    background: var(--color5);
+    /* 광고 뱃지 배경 색 */
 
 }
 
@@ -89,18 +95,20 @@ header {
 
 #board-info #viewers-area {
 
-    color: black; /* 접속자 수 글씨 색 */
+    color: black;
+    /* 접속자 수 글씨 색 */
 
 }
 
 
 #board-info #viewers-area #viewers:before {
 
-    content: "돈까스 ";    /* 숫자 앞에 들어갈 문구 */
+    content: "돈까스 ";
+    /* 숫자 앞에 들어갈 문구 */
 
-        /* ex) content: "트수 "; */
+    /* ex) content: "트수 "; */
 
-        /* 출력 시 : 트수 n */
+    /* 출력 시 : 트수 n */
 
     cursor: text;
 
@@ -109,11 +117,12 @@ header {
 
 #board-info #viewers-area #viewers:after {
 
-    content: "개 째 삼키는 중";    /* 숫자 뒤에 들어갈 문구 */
+    content: "개 째 삼키는 중";
+    /* 숫자 뒤에 들어갈 문구 */
 
-        /* ex) content: "명 접속중"; */
+    /* ex) content: "명 접속중"; */
 
-        /* 출력시 : n명 접속중 */
+    /* 출력시 : n명 접속중 */
 
     cursor: text;
 
@@ -125,7 +134,8 @@ header {
 
 #article-list>.article-list-row.notice {
 
-    background-color: var(--color3); /* 공지 배경 색 */
+    background-color: var(--color3);
+    /* 공지 배경 색 */
 
 }
 
@@ -135,7 +145,8 @@ header {
 
 #article-list>.article-list-row>.item>.list-header>span {
 
-    background-color: var(--color2); /* 글 추천 수 배경 색 */
+    background-color: var(--color2);
+    /* 글 추천 수 배경 색 */
 
 }
 
@@ -145,7 +156,8 @@ header {
 
 #article-list>.article-list-row>.item>a.list-title>small.comment-count {
 
-    color: var(--color2); /* 댓글 수 색 */
+    color: var(--color2);
+    /* 댓글 수 색 */
 
 }
 
@@ -190,7 +202,8 @@ header {
 }
 
 
-.btn-group-sm>.btn, .btn-sm {
+.btn-group-sm>.btn,
+.btn-sm {
 
     border-radius: 15px;
 
@@ -202,8 +215,10 @@ header {
 
 .btn-outline-success {
 
-    color: var(--color5); /* 추천 버튼 배경 색 */
+    color: var(--color5);
+    /* 추천 버튼 배경 색 */
 
-    border-color: var(--color3); /* 추천 버튼 테두리 색 */
+    border-color: var(--color3);
+    /* 추천 버튼 테두리 색 */
 
 }
