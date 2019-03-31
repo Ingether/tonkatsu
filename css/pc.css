@@ -42,10 +42,11 @@ img[src*="https://static-cdn.jtvnw.net/badges/v1/dad6e838-930f-4f08-9f44-a311085
 	width: 18px;
 	height: 18px;
 	padding-left: 18px;
-
-
 }
 
+#board-info>img#board-info-profile-img {
+display: none;
+}
 html {
 	background: var(--color0);
 	height: auto;
