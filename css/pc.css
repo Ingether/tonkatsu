@@ -34,6 +34,16 @@
 /* 모든 항목 focus시 아웃라인 제거 */
 *:focus { outline: none !important; }
 
+img[src*="https://static-cdn.jtvnw.net/badges/v1/dad6e838-930f-4f08-9f44-a31108551a5a/1"] {
+	background:url("https://ingether.github.io/tonkatsu/assets/icon.png") no-repeat;
+	background-size:18px;
+	width:18px;
+	height:18px;
+	padding-left:18px;
+	 
+		
+ }
+
 html {
 	background: var(--color0);
   height: auto;
